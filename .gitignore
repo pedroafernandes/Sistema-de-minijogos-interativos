@@ -1,52 +1,183 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
 
-# Precompiled Headers
-*.gch
-*.pch
+int main() {
+    setlocale(LC_ALL, "Portuguese_Brazil");
+    
+    printf("\n\nMINI GAMES\n\n");   //titulo do jogo (preciso de um melhor)
+    
+    int opcao1;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    while (1) {
+        printf("Escolha um jogo:\n");
+        printf("1 - Pergunta e Resposta\n");
+        printf("2 - Cobra na Caixa!\n");
+        printf("3 - Gousmas war\n");
+        printf("4 - Sair\n");
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+        scanf("%d", &opcao1);
+        
+        if (opcao1 == 1) {
+            char voltarMenu;
+            do {
+                printf("Pergunta e Resposta\n");
+                printf("1 - Qual é a capital do Brasil?\n");
+                printf ("a) São Paulo\n");
+                printf ("b) Rio de Janeiro\n");
+                printf ("c) Brasília\n");
+                printf ("d) Salvador\n");
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+                char resposta;
+                scanf(" %c", &resposta); 
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+                if (resposta == 'a'){
+                    printf("Resposta errada, a resposta correta era letra c) Brasília\n");
+                }
+                else if (resposta == 'b'){
+                    printf("Resposta errada, a resposta correta era letra c) Brasília\n");
+                }
+                else if (resposta == 'c'){
+                    printf("\nResposta correta\n");
+                }
+                else if (resposta == 'd'){
+                    printf("Resposta errada, a resposta correta era letra c) Brasília\n");
+                }
+                else {
+                    printf("Opção inválida\n");
+                }
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+                printf("Pergunta e Resposta\n");
+                printf("2 - Quantas Copas do Mundo de Futebol a seleção brasileira já ganhou?\n");
+                printf ("a) 5\n");
+                printf ("b) 4\n");
+                printf ("c) 6\n");
+                printf ("d) 7\n");
+            
+                char resposta2;
+                scanf(" %c", &resposta2); 
+
+                if (resposta2 == 'a'){
+                    printf("\nResposta correta!\n");
+                }
+                else if (resposta2 == 'b'){
+                    printf("Resposta errada, a resposta correta era letra a) 5\n");
+                }
+                else if (resposta2 == 'c'){
+                    printf("Resposta errada, a resposta correta era letra a) 5\n");
+                }
+                else if (resposta2 == 'd'){
+                    printf("Resposta errada, a resposta correta era letra a) 5\n");
+                }
+                else {
+                    printf("Opção inválida\n");
+                }
+
+                printf("Pergunta e Resposta\n");
+                printf("3 - Qual é o maior planeta do sistema solar?\n");
+                printf ("a) Terra\n");
+                printf ("b) Marte\n");
+                printf ("c) Júpiter\n");
+                printf ("d) Saturno\n");
+                
+                char resposta3;
+                scanf(" %c", &resposta3); 
+
+                if (resposta3 == 'a'){
+                    printf("Resposta errada, a resposta correta era letra c) Júpiter\n");
+                }
+                else if (resposta3 == 'b'){
+                    printf("Resposta errada, a resposta correta era letra c) Júpiter\n");
+                }
+                else if (resposta3 == 'c'){
+                    printf("\nResposta correta!\n");
+                }
+                else if (resposta3 == 'd'){
+                    printf("Resposta errada, a resposta correta era letra c) Júpiter\n");
+                }
+                else {
+                    printf("Opção inválida\n");
+                }
+            
+                printf("Pergunta e Resposta\n");
+                printf("4 - Qual o jogo mais vendido do mundo?\n");
+                printf ("a) GTA5\n");
+                printf ("b) Minecraft\n");
+                printf ("c) Mario kart 8\n");
+                printf ("d) The last of us part II\n");
+                
+                char resposta4;
+                scanf(" %c",&resposta4); 
+
+                if (resposta4 == 'a'){
+                    printf("Resposta errada, a resposta correta era letra b) Minecraft\n");
+                }
+                else if (resposta4 == 'b'){
+                    printf("\nResposta correta!\n");
+                }
+                else if (resposta4 == 'c'){
+                    printf("Resposta errada, a resposta correta era letra b) Minecraft\n");
+                }
+                else if (resposta4 == 'd'){
+                    printf("Resposta errada, a resposta correta era letra b) Minecraft\n");
+                }
+                else {
+                    printf("Opção inválida\n");
+                }
+            
+                printf("Pergunta e Resposta\n");
+                printf("5 - qual foi o primeiro FPS que ficou famoso? \n");
+                printf ("a) Counter Strike\n");
+                printf ("b) doom\n");
+                printf ("c) call of duty\n");
+                printf ("d) Wolfenstein 3D\n");
+                
+                char resposta5;
+                scanf(" %c",&resposta5); 
+
+                if (resposta5 == 'a'){
+                    printf("Resposta errada, a resposta correta era letra d) Wolfenstein 3D\n");
+                }
+                else if (resposta5 == 'b'){
+                    printf("Resposta errada, a resposta correta era letra d) Wolfenstein 3D\n");
+                }
+                else if (resposta5 == 'c'){
+                    printf("Resposta errada, a resposta correta era letra d) Wolfenstein 3D\n");
+                }
+                else if (resposta5 == 'd'){
+                    printf("\nResposta correta!\n");
+                }
+                else {
+                    printf("Opção inválida\n");
+                }
+            
+                if (resposta == 'c' && resposta2 == 'a' && resposta3 == 'c' && resposta4 == 'b' && resposta5 == 'd'){
+                    printf("\nParabéns, você acertou todas as perguntas!\n");
+                } else {
+                    printf("\nVocê errou alguma pergunta, tente novamente!\n");
+                }
+                
+                printf("\nDeseja voltar ao menu principal?\nSe sim digite 's', mas se quiser jogar novamente digite 'n'\n");
+                scanf("%c", &voltarMenu);
+            } while (voltarMenu == 'n');
+        
+        
+        } else if (opcao1 == 2) {
+            printf("Cobra na Caixa!\n");
+        
+        } else if (opcao1 == 3) {
+            printf("Gousmas war\n");
+        
+        } else if (opcao1 == 4) {
+            printf("\nAté a proxima jogatina!\n\n");
+            break;
+        
+        } else {
+            printf("Opção inválida\n");
+        }
+    }
+
+    return 0; 
+}
